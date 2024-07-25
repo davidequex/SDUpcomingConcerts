@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Concerts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #000000;
+            margin: 0;
+            padding: 30px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+        .container {
+            width: 400px;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0 15px 15px; /* Adjusted padding to make space for sticky header */
+            text-align: center;
+            overflow-y: auto;
+            position: relative;
+        }
+        h2 {
+            color: #000000;
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            z-index: 1; /* Ensure the title is above other elements */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove margin to align with the top of the container */
+        }
+        li {
+            background-color: #e9ecef;
+            border-radius: 4px;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: left;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        li:nth-child(even) {
+            background-color: #f1f3f5;
+        }
+        li h3 {
+            margin: 0;
+            color: #333;
+        }
+        li p {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upcoming Concerts in San Diego</h2>
+        <ul id="concerts">
+            <!-- Concert list items will be dynamically inserted here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

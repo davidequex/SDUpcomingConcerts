@@ -1,0 +1,11 @@
+{
+    "name": "Upcoming San Diego Concerts",
+    "version": "1.0.0",
+    "description": "Finding Concerts In San Diego",
+    "manifest_version": 3,
+    "author": "Davide Quex",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Upcoming San Diego Concerts"
+    }
+}
